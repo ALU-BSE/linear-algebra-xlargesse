@@ -26,3 +26,9 @@ for i in range(len(Prices)):
         # Find the product of Prices[i][j] and 
         # Array2[j] and add it to the sum.
         row_sum += Prices[i][j] * Array2[j]
+        # If we have reached the end of the row, append the sum to the Ans list.
+        if j == len(Prices[0]) - 1:
+            Ans.append(row_sum)
+        else:
+            continue
+print(f"Result: {Ans}")
