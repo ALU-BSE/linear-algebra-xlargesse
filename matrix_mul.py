@@ -18,6 +18,11 @@ Ans = []
 for i in range(len(Prices)):
     # Initialize the sum for the current row.
     row_sum = 0
+
+    # Iterate over the elements of the current row 
+    # (Prices[i]) and multiply each element by its 
+    # corresponding element in Array2.
     for j in range(len(Prices[0])):
-        # Find the product of Prices[i][j] and Array2[j] and add it to the sum.
+        # Find the product of Prices[i][j] and 
+        # Array2[j] and add it to the sum.
         row_sum += Prices[i][j] * Array2[j]
